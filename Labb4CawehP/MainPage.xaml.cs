@@ -13,9 +13,14 @@ namespace Labb4CawehP
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        
+
         public MainPage()
         {
+            
             InitializeComponent();
+            this.BindingContext = new MainViewModel();
         }
+        
     }
 }

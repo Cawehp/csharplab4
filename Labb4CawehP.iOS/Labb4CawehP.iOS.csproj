@@ -130,4 +130,9 @@
       <Name>Labb4CawehP</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\norway.png" />
+    <BundleResource Include="Resources\denmark.png" />
+    <BundleResource Include="Resources\sweden.png" />
+  </ItemGroup>
 </Project>

@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Labb4CawehP.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Label" Text="Lab 4" Priority="0" />
+        <ToolbarItem Text="Previous" Command="{Binding PrevButton}" Priority="2" />
+        <ToolbarItem Text="Next" Command="{Binding NextButton}" Priority="3" />
+    </ContentPage.ToolbarItems>
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Image Source="{Binding CurrentCountry.PictureUrl}"
+               Aspect="AspectFill"
+               BackgroundColor="Blue"/>
+        <Label Text="{Binding CurrentCountry.Name}" HorizontalOptions="Center" />
+        <Label Text="{Binding CurrentCountry.Currency}" HorizontalOptions="Center" />
+        <Label Text="{Binding CurrentCountry.Population}" HorizontalOptions="Center" />
+        <Label Text="{Binding CurrentCountry.Description}" HorizontalOptions="Center"/>
     </StackLayout>
 </ContentPage>
